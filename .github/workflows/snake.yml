@@ -14,7 +14,9 @@ jobs:
           outputs: dist/snake.svg
       - uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output
-          build_dir: dist
+          github_user_name: sudarsan2507-hue
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
