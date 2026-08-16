@@ -93,13 +93,6 @@ and SQLite/Firestore.
 
 ## Activity
 
-<a href="https://github.com/sudarsan2507-hue">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=sudarsan2507-hue&show_icons=true&theme=transparent&hide_border=true&hide=issues&icon_color=A78BFA&title_color=A78BFA" />
-</a>
-<a href="https://github.com/sudarsan2507-hue">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudarsan2507-hue&layout=compact&theme=transparent&hide_border=true&langs_count=8&title_color=A78BFA" />
-</a>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sudarsan2507-hue/sudarsan2507-hue/output/snake-dark.svg">
   <img src="https://raw.githubusercontent.com/sudarsan2507-hue/sudarsan2507-hue/output/snake.svg">
