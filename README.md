@@ -1,4 +1,5 @@
 # Sudarsan Ravichandran
+[![](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=3500&pause=1200&color=58A6FF&vCenter=true&width=560&lines=failure-aware+retrieval;graph+search+for+multi-hop+QA;evaluation+that+reports+the+flat+results+too)](https://github.com/sudarsan2507-hue)
 
 CSE (AI & ML) undergrad at VIT Chennai. Most of my work circles one question:
 how do you stop a system from repeating a mistake it has already made?
@@ -96,3 +97,6 @@ Currently going deeper into LLMs, retrieval systems, and the algorithmic side of
 Open to ML/AI internships.
 
 [LinkedIn](https://www.linkedin.com/in/sudarsan-ravichandran-82b209391/) · sudarsan2507@gmail.com
+![](https://github-readme-stats.vercel.app/api?username=sudarsan2507-hue&show_icons=true&theme=transparent&hide_border=true&hide=issues)
+
+![](https://raw.githubusercontent.com/sudarsan2507-hue/sudarsan2507-hue/output/snake.svg)
