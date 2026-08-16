@@ -19,6 +19,11 @@ a memory-knowledge graph, and consults that graph when retrieving for later
 queries. Benchmarked against a standard RAG baseline on HotpotQA and TriviaQA
 across three LLMs, measuring F1, exact match, and faithfulness.
 
+![GradeRAG vs standard RAG, F1 across models and datasets](https://raw.githubusercontent.com/sudarsan2507-hue/sudarsan2507-hue/main/assets/graderag-results.svg)
+
+<details>
+<summary>Exact numbers</summary>
+
 | Model | Dataset | Baseline F1 | GradeRAG F1 | Δ |
 |---|---|---|---|---|
 | Nemotron-Mini | HotpotQA | 0.72 | 0.86 | **+14.3** |
@@ -26,6 +31,8 @@ across three LLMs, measuring F1, exact match, and faithfulness.
 | GPT-4o-Mini | HotpotQA | 0.13 | 0.22 | **+9.0** |
 | GPT-4o-Mini | TriviaQA | 0.12 | 0.17 | **+5.2** |
 | Qwen2.5-VL | both | n/a | n/a | flat |
+
+</details>
 
 Two caveats worth stating up front: Qwen2.5-VL showed no measurable improvement,
 and the local-model runs were on a small sample (n=15), so the Nemotron numbers
@@ -40,7 +47,7 @@ of restarting. Evaluated against a greedy baseline using paired t-tests and 95%
 confidence intervals, with rule-based, embedding (BGE), and hybrid verifiers, plus
 MCTS and beam-search variants.
 
-**Publication.** P. Sharma, **S. Ravichandran**, V. V. Saxena, P. Kumar, and
+**Publication.** P. Sharma, **Sudarsan Ravichandran**, V. V. Saxena, P. Kumar, and
 R. Tiwari, "Investigation of Interface Trap Charges on Schottky TFET for High
 Frequency Application." Accepted at VLSI SATA. A TCAD study of interface trap
 charge effects on a 50 nm Double-Gate Schottky Tunnel FET, from earlier work
@@ -87,9 +94,18 @@ users.
 
 ## Tools
 
-Python (PyTorch, TensorFlow, scikit-learn, sentence-transformers, FAISS, FastAPI),
-JavaScript and Node, Dart and Flutter, C++, Java. Comfortable with Git, REST APIs,
-and SQLite/Firestore.
+<code><img height="24" alt="python" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+<code><img height="24" alt="pytorch" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/pytorch/pytorch.png"></code>
+<code><img height="24" alt="tensorflow" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png"></code>
+<code><img height="24" alt="flask" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flask/flask.png"></code>
+<code><img height="24" alt="nodejs" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
+<code><img height="24" alt="flutter" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png"></code>
+<code><img height="24" alt="cpp" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
+<code><img height="24" alt="java" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
+<code><img height="24" alt="git" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
+
+**ML and research** · scikit-learn, sentence-transformers, FAISS, Hugging Face, Neo4j
+**Backend** · FastAPI, Express, JWT auth, REST, SQLite, Firestore
 
 ## Activity
 
