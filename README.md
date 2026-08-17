@@ -12,12 +12,13 @@ work to deploy the things I build.
 ## Research
 
 **GradeRAG**, failure-aware retrieval-augmented generation.
-Built during an NLP research internship at NIT Trichy (May to June 2026). Standard
-RAG has no memory of its own errors, so it makes the same retrieval mistake on
-every similar question. GradeRAG grades each answer, stores the failure pattern in
-a memory-knowledge graph, and consults that graph when retrieving for later
-queries. Benchmarked against a standard RAG baseline on HotpotQA and TriviaQA
-across three LLMs, measuring F1, exact match, and faithfulness.
+NLP research internship, NIT Trichy (May to June 2026).
+
+Standard RAG has no memory of its own errors, so it repeats the same retrieval
+mistake on every similar question. GradeRAG grades each answer, stores the failure
+pattern in a memory-knowledge graph, and consults that graph when retrieving for
+later queries. Benchmarked against a standard RAG baseline on HotpotQA and
+TriviaQA across three LLMs.
 
 ![GradeRAG vs standard RAG, F1 across models and datasets](https://raw.githubusercontent.com/sudarsan2507-hue/sudarsan2507-hue/main/assets/graderag-results.svg)
 
@@ -34,63 +35,40 @@ across three LLMs, measuring F1, exact match, and faithfulness.
 
 </details>
 
-Two caveats worth stating up front: Qwen2.5-VL showed no measurable improvement,
-and the local-model runs were on a small sample (n=15), so the Nemotron numbers
-need a larger evaluation before I would lean on them.
-
-`Python` `FAISS` `sentence-transformers` `Hugging Face` `bitsandbytes` `Neo4j`
+Qwen2.5-VL showed no measurable improvement, and the local-model runs were on a
+small sample (n=15), so the Nemotron numbers need a larger evaluation before I
+would lean on them.
 
 **[DemoSearch](https://github.com/sudarsan2507-hue/DemoSearch)**, graph search for
-multi-hop knowledge-graph QA. An earlier and rougher run at the same idea: when a
-reasoning path fails, revive the paths that were wrongly rejected earlier instead
-of restarting. Evaluated against a greedy baseline using paired t-tests and 95%
-confidence intervals, with rule-based, embedding (BGE), and hybrid verifiers, plus
-MCTS and beam-search variants.
+multi-hop knowledge-graph QA. An earlier run at the same idea: when a reasoning
+path fails, revive the paths that were wrongly rejected earlier instead of
+restarting. Evaluated against a greedy baseline with paired t-tests and 95%
+confidence intervals, across rule-based, embedding (BGE), and hybrid verifiers.
 
 **Publication.** P. Sharma, **Sudarsan Ravichandran**, V. V. Saxena, P. Kumar, and
 R. Tiwari, "Investigation of Interface Trap Charges on Schottky TFET for High
-Frequency Application." Accepted at VLSI SATA. A TCAD study of interface trap
-charge effects on a 50 nm Double-Gate Schottky Tunnel FET, from earlier work
-outside ML.
+Frequency Application." Accepted at VLSI SATA. TCAD study on a 50 nm Double-Gate
+Schottky Tunnel FET, from earlier work outside ML.
 
 ## Hackathons
 
-**[spatialAuth](https://github.com/prayag-1771/spatialAuth)**, winner of
-Hack-N-Droid 2.0 (SEQATO × VIT Chennai). Authentication that treats the room you
-are standing in as the credential, built from acoustic reflections, WiFi patterns,
-and magnetic distortions. I built the ML backend: a One-Class SVM over sensor
-signatures served through a FastAPI enrollment and authentication API, later
-refactored for multi-room support. Team of four; my work is on the
-`feature/ml-backend` branch.
+| Project | What it does | What I built |
+|---|---|---|
+| **[spatialAuth](https://github.com/prayag-1771/spatialAuth)** 🏆 | Authentication that treats the room you are standing in as the credential, from acoustic, WiFi, and magnetic signatures | ML backend: One-Class SVM over sensor signatures, FastAPI enrollment and auth API, multi-room support |
+| **Landroid** | AI land-intelligence platform | ML pipeline: NDVI vegetation analysis, ARIMA forecasting, raster validation, plant-zone detection |
+| **Hawkeye** | Real-time acoustic threat detection | Audio module: YAMNet transfer learning on a live 16 kHz stream, confidence thresholding, evidence capture |
+| **[SIH-137](https://github.com/sudarsan2507-hue/SIH-137)** | Weather-safety dashboard routing users toward safer nearby locations | Backend data models, services layer, Vite build and CI |
 
-**Landroid**, AI land-intelligence platform (Birdscale × VIT Chennai). I built the
-ML pipeline: NDVI vegetation analysis, ARIMA trend forecasting, raster validation,
-and plant-zone detection, with tests covering it.
-
-**Hawkeye**, real-time acoustic threat detection. I built the audio module: YAMNet
-transfer learning over a live 16 kHz mic stream, filtered to dangerous AudioSet
-classes, with confidence thresholding, an energy-based loudness check, and
-automatic evidence capture, served via FastAPI.
-
-**[SIH-137 / WeatherGuard](https://github.com/sudarsan2507-hue/SIH-137)**, Smart
-India Hackathon 2025. Weather-safety dashboard that routes users toward safer
-nearby locations. I owned the backend data models, the services layer, and the
-Vite build and CI setup. Team of four.
+🏆 Winner, Hack-N-Droid 2.0 (SEQATO × VIT Chennai). All four were team projects;
+my spatialAuth work is on the `feature/ml-backend` branch.
 
 ## Building
 
-**[Student-frndly](https://github.com/sudarsan2507-hue/Student-frndly)**, a skill
-tracker that models decay over time. Express backend with JWT auth including
-server-side revocation, bcrypt, Google OAuth, SQLite, and a Jest suite. This is
-the project where I learned to make a backend secure rather than merely working.
-
-**[yt-knowledge-assistant](https://github.com/sudarsan2507-hue/yt-knowledge-assistant)**,
-RAG over YouTube transcripts for faster review. 384-dimensional embeddings and
-manual cosine similarity, roughly one to two minutes for a ten-minute video.
-
-**[Med-Smart](https://github.com/sudarsan2507-hue/Med-Smart)**, Flutter and
-Firebase medication adherence app with an accessibility-focused UI for elderly
-users.
+| Project | What it does | Stack |
+|---|---|---|
+| **[Student-frndly](https://github.com/sudarsan2507-hue/Student-frndly)** | Skill tracker that models decay over time | Express, JWT with server-side revocation, bcrypt, Google OAuth, SQLite, Jest |
+| **[yt-knowledge-assistant](https://github.com/sudarsan2507-hue/yt-knowledge-assistant)** | RAG over YouTube transcripts for faster review | 384-dim embeddings, manual cosine similarity, 1 to 2 min per 10-min video |
+| **[Med-Smart](https://github.com/sudarsan2507-hue/Med-Smart)** | Medication adherence app for elderly users | Flutter, Firebase, accessibility-focused UI |
 
 ## Tools
 
