@@ -54,12 +54,12 @@ Schottky Tunnel FET, from earlier work outside ML.
 
 | Project | What it does | What I built |
 |---|---|---|
-| **[spatialAuth](https://github.com/prayag-1771/spatialAuth)** 🏆 | Authentication that treats the room you are standing in as the credential, from acoustic, WiFi, and magnetic signatures | ML backend: One-Class SVM over sensor signatures, FastAPI enrollment and auth API, multi-room support |
+| **[spatialAuth](https://github.com/prayag-1771/spatialAuth)**  | Authentication that treats the room you are standing in as the credential, from acoustic, WiFi, and magnetic signatures | ML backend: One-Class SVM over sensor signatures, FastAPI enrollment and auth API, multi-room support |
 | **Landroid** | AI land-intelligence platform | ML pipeline: NDVI vegetation analysis, ARIMA forecasting, raster validation, plant-zone detection |
 | **Hawkeye** | Real-time acoustic threat detection | Audio module: YAMNet transfer learning on a live 16 kHz stream, confidence thresholding, evidence capture |
 | **[SIH-137](https://github.com/sudarsan2507-hue/SIH-137)** | Weather-safety dashboard routing users toward safer nearby locations | Backend data models, services layer, Vite build and CI |
 
-🏆 Winner, Hack-N-Droid 2.0 (SEQATO × VIT Chennai). All four were team projects;
+Winner, Hack-N-Droid 2.0 (SEQATO × VIT Chennai). All four were team projects;
 my spatialAuth work is on the `feature/ml-backend` branch.
 
 ## Building
