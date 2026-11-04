@@ -39,6 +39,24 @@ Qwen2.5-VL showed no measurable improvement, and the local-model runs were on a
 small sample (n=15), so the Nemotron numbers need a larger evaluation before I
 would lean on them.
 
+**[GLASS-ARMOR](https://github.com/sudarsan2507-hue/GLASS-ARMOR)**, security of LLM-driven
+post-quantum migrations. Teams are moving from RSA and elliptic curves to ML-KEM and
+ML-DSA, much of that rewrite will be done by LLMs, and the existing tests will say it
+worked. I built a benchmark of one-flaw variants that pass every test, ran 400 real
+migrations across four models, and wrote a security gate (static rules plus adversarial
+probes against the running code). Functional tests caught 0 of 71 planted flaws. Gate
+feedback repaired 10 of 31 insecure outputs where test feedback repaired 0 (McNemar
+p = 0.002). The gate was developed on this benchmark; on six new variants written
+afterwards it caught 4.
+
+**[iAudit](https://github.com/sudarsan2507-hue/iAudit)**, fairness audit of brain-age
+prediction. Is the bias in the model or in the scanner? I ran two CNNs (DeepBrainNet,
+BrainAgeNeXt) next to three plain tabular models on 560 IXI MRI scans, then checked the
+findings on eNKI and SALD. One site, IOP, is the worst for every model, CNN or tabular
+(DeepBrainNet error 11.5 years there vs 4.4 at Guys), which points to the acquisition,
+not the architecture. I added an unsupervised reliability score that flags scans that
+look unlike the training sites.
+
 **[DemoSearch](https://github.com/sudarsan2507-hue/DemoSearch)**, graph search for
 multi-hop knowledge-graph QA. An earlier run at the same idea: when a reasoning
 path fails, revive the paths that were wrongly rejected earlier instead of
@@ -66,6 +84,9 @@ my spatialAuth work is on the `feature/ml-backend` branch.
 
 | Project | What it does | Stack |
 |---|---|---|
+| **[SentinelMind](https://github.com/sudarsan2507-hue/Sentinel_Mind)** | Watches an AI agent while it runs and flags invented tools, loops and goal drift; guard mode blocks the bad step | Flask, Socket.IO, React, Groq, 207 tests |
+| **[Safe-Signal](https://github.com/sudarsan2507-hue/Safe-Signal)** | On-device distress detection from a hand signal, voice tension and sudden movement, no server ([live](https://safe-signal-pi.vercel.app/)) | React, MediaPipe, Web Audio, Vite |
+| **[Engram](https://github.com/sudarsan2507-hue/Engram)** | Offline memory for edge AI agents that screens synced memories for poisoning before trusting them | Qdrant Edge, Ed25519 signing, FastAPI, Docker |
 | **[Student-frndly](https://github.com/sudarsan2507-hue/Student-frndly)** | Skill tracker that models decay over time | Express, JWT with server-side revocation, bcrypt, Google OAuth, SQLite, Jest |
 | **[yt-knowledge-assistant](https://github.com/sudarsan2507-hue/yt-knowledge-assistant)** | RAG over YouTube transcripts for faster review | 384-dim embeddings, manual cosine similarity, 1 to 2 min per 10-min video |
 | **[Med-Smart](https://github.com/sudarsan2507-hue/Med-Smart)** | Medication adherence app for elderly users | Flutter, Firebase, accessibility-focused UI |
