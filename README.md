@@ -223,23 +223,111 @@ Real screenshots from each project, with its headline number. Click a card to op
 </details>
 
 <details>
-<summary><b>Team builds</b> &nbsp;<code>8</code></summary>
+<summary><b>Team builds</b> &nbsp;<code>9</code> &nbsp;· open one to see my part</summary>
 <br/>
 
-| Project | What it is |
-|:--|:--|
-| **[spatialAuth](https://github.com/sudarsan2507-hue/spatialAuth)** | Logs you in only inside a room it recognises, using the room itself as the key. *Winner.* |
-| **[Synapse XR](https://github.com/sudarsan2507-hue/Synapse_XR)** | A remote expert guides a worker through AR, with holographic 3D hands. *DevsHouse.* |
-| **[Landroid](https://github.com/sudarsan2507-hue/Landroid)** | Turns drone survey data into land health, tree cover and land value on a map. *Birdscale × VIT Chennai.* |
-| **[ShowOnce](https://github.com/sudarsan2507-hue/ShowOnce)** | Show an agent a task once; it turns that into a checked, repeatable workflow. |
-| **[CodeBase](https://github.com/sudarsan2507-hue/CodeBase)** | Connect a GitHub repo and ask questions about its code. |
-| **[WebMCP Forge (Codex edition)](https://github.com/sudarsan2507-hue/CockPit-Codex)** | A second version of WebMCP Forge that runs the agent against safe test targets. *with fawaz_ah.* |
-| **[WeatherGuard](https://github.com/sudarsan2507-hue/SIH-137)** | Shows the safest direction to move in extreme weather, and the nearest hospital or police station. *Smart India Hackathon.* |
-| **[Hawkeye](https://github.com/sudarsan2507-hue/Hawkeye)** | Real-time safety monitoring from video, audio and crowd movement. |
+<details>
+<summary><b>spatialAuth</b> &nbsp;· Winner, Hack-N-Droid 2.0</summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Logs you in only inside a room it recognises, using the room itself as the key.</td></tr>
+  <tr><td><b>My part</b></td><td>I built the authentication backend: a One-Class SVM trained for each enrolled room, a login that takes 5 samples and accepts when at least 3 match, and a FastAPI service for enrolling and checking rooms, later refactored to handle many rooms. It is on the feature/ml-backend branch of the team repo.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>One-Class SVM</code> <code>scikit-learn</code> <code>FastAPI</code> <code>Kotlin</code> <code>Android sensors</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/spatialAuth">Repo</a> · <a href="https://github.com/prayag-1771/spatialAuth/tree/feature/ml-backend">My code: feature/ml-backend</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>Aegis AI</b> &nbsp;· Finalist, ET AI Hackathon 2026</summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Connects scam calls, money-mule accounts and fake currency into one case for the police.</td></tr>
+  <tr><td><b>My part</b></td><td>I owned Fraud Shield: the scam classifier, warning markers, playbooks, the live-call monitor and the WhatsApp bot. I also built the supply-trail engine and the counterfeit serial-number check. 84 of 399 commits.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>Python</code> <code>NLP</code> <code>Twilio</code> <code>Graph ML</code> <code>Next.js</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/Aegis">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>Synapse XR</b> &nbsp;· DevsHouse</summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>A remote expert guides a worker through AR, with holographic 3D hands.</td></tr>
+  <tr><td><b>My part</b></td><td>I owned the AI models: YOLOv8 Nano training, an LSTM to smooth hand motion, TFLite INT8 export, Gemini prompts for step checks, and the AR overlays in Unity.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>YOLOv8</code> <code>LSTM</code> <code>TFLite</code> <code>Unity AR</code> <code>Gemini</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/Synapse_XR">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>Landroid</b> &nbsp;· Birdscale × VIT Chennai</summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Turns drone survey data into land health, tree cover and land value on a map.</td></tr>
+  <tr><td><b>My part</b></td><td>I built the ML pipeline: an ARIMA trend model, raster validation and plant-zone scoring, and I replaced hard-coded rainfall and temperature with real API data in the health dashboard.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>FastAPI</code> <code>ARIMA</code> <code>rasterio</code> <code>Flutter</code> <code>MapLibre</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/Landroid">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>ShowOnce</b></summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Show an agent a task once; it turns that into a checked, repeatable workflow.</td></tr>
+  <tr><td><b>My part</b></td><td>I wrote 24 of 43 commits: the Slack-to-Linear pipeline, encrypted secrets, a setup checker, offline tests and the recovery timeline view.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>Python</code> <code>Slack API</code> <code>Linear</code> <code>pytest</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/ShowOnce">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>CodeBase</b></summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Connect a GitHub repo and ask questions about its code.</td></tr>
+  <tr><td><b>My part</b></td><td>I wrote 15 of 27 commits: GitHub authentication, clear rate-limit and error messages, request validation, and a dashboard drawn from the real GitHub data.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>TypeScript</code> <code>Next.js</code> <code>GitHub API</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/CodeBase">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>WebMCP Forge (Codex edition)</b> &nbsp;· with fawaz_ah</summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>A second version of WebMCP Forge that runs the agent against safe test targets.</td></tr>
+  <tr><td><b>My part</b></td><td>I wrote 15 of 45 commits: the three execution tiers, the Prism mock target, the policy gate's egress rules and the tests that cover them.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>Next.js</code> <code>TypeScript</code> <code>Prism</code> <code>Netlify</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/CockPit-Codex">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>WeatherGuard</b> &nbsp;· Smart India Hackathon</summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Shows the safest direction to move in extreme weather, and the nearest hospital or police station.</td></tr>
+  <tr><td><b>My part</b></td><td>I moved it to Vite, replaced Google Maps and OpenWeather with free key-less APIs, added a FastAPI prediction engine and set up GitHub Pages deployment.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>Vite</code> <code>Leaflet</code> <code>Open-Meteo</code> <code>FastAPI</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/SIH-137">Repo</a></td></tr>
+</table>
+</details>
+
+<details>
+<summary><b>Hawkeye</b></summary>
+<br/>
+<table>
+  <tr><td width="110"><b>What it is</b></td><td>Real-time safety monitoring from video, audio and crowd movement.</td></tr>
+  <tr><td><b>My part</b></td><td>I pushed the initial codebase; the team built on it.</td></tr>
+  <tr><td><b>Stack</b></td><td><code>YOLO</code> <code>OpenCV</code> <code>Librosa</code> <code>FastAPI</code></td></tr>
+  <tr><td><b>Code</b></td><td><a href="https://github.com/sudarsan2507-hue/Hawkeye">Repo</a></td></tr>
+</table>
+</details>
 
 </details>
 
-Team credits for each build are in the [portfolio](https://sudarsan2507-hue.github.io/Portfolio/#detailed).
+Aegis AI is listed twice: under Agent safety and, with my part, under Team builds.
 
 ## Tools
 
