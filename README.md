@@ -26,7 +26,7 @@ See it in 3D: [two-minute version](https://sudarsan2507-hue.github.io/Portfolio/
 Ranked by how much finished work backs each one. Click a row to see its repos.
 
 <details>
-<summary><img src="assets/open-01.svg" width="94%" alt="1. AI safety and LLM evaluation research. Click to see the repos." /></summary>
+<summary><img src="assets/open-01.svg" width="94%" align="middle" alt="1. AI safety and LLM evaluation research. Click to see the repos." /></summary>
 <br/>
 
 I design the experiment before I run it, and I report the results that did not improve.
@@ -37,7 +37,7 @@ I design the experiment before I run it, and I report the results that did not i
 </details>
 
 <details>
-<summary><img src="assets/open-02.svg" width="94%" alt="2. AI agent security and guardrails. Click to see the repos." /></summary>
+<summary><img src="assets/open-02.svg" width="94%" align="middle" alt="2. AI agent security and guardrails. Click to see the repos." /></summary>
 <br/>
 
 Three working systems on one problem: limiting the damage after a prompt injection lands.
@@ -50,7 +50,7 @@ Three working systems on one problem: limiting the damage after a prompt injecti
 </details>
 
 <details>
-<summary><img src="assets/open-03.svg" width="94%" alt="3. Applied LLM and RAG engineering. Click to see the repos." /></summary>
+<summary><img src="assets/open-03.svg" width="94%" align="middle" alt="3. Applied LLM and RAG engineering. Click to see the repos." /></summary>
 <br/>
 
 From a supervised NLP research internship at NIT Trichy, rated Excellent, with a paper under review.
@@ -62,7 +62,7 @@ From a supervised NLP research internship at NIT Trichy, rated Excellent, with a
 </details>
 
 <details>
-<summary><img src="assets/open-04.svg" width="94%" alt="4. ML engineering and data. Click to see the repos." /></summary>
+<summary><img src="assets/open-04.svg" width="94%" align="middle" alt="4. ML engineering and data. Click to see the repos." /></summary>
 <br/>
 
 I publish data other people can train on, split so nothing leaks between train and test.
@@ -73,7 +73,7 @@ I publish data other people can train on, split so nothing leaks between train a
 </details>
 
 <details>
-<summary><img src="assets/open-05.svg" width="94%" alt="5. Medical imaging ML. Click to see the repos." /></summary>
+<summary><img src="assets/open-05.svg" width="94%" align="middle" alt="5. Medical imaging ML. Click to see the repos." /></summary>
 <br/>
 
 One line of work so far, not yet a specialisation.
@@ -83,7 +83,7 @@ One line of work so far, not yet a specialisation.
 </details>
 
 <details>
-<summary><img src="assets/open-06.svg" width="94%" alt="6. Edge and sensing ML. Click to see the repos." /></summary>
+<summary><img src="assets/open-06.svg" width="94%" align="middle" alt="6. Edge and sensing ML. Click to see the repos." /></summary>
 <br/>
 
 Hardware and ML together, on ESP32 boards.
@@ -243,7 +243,7 @@ Team credits for each build are in the [portfolio](https://sudarsan2507-hue.gith
 
 ## Tools
 
-`Python` `PyTorch` `scikit-learn` `Hugging Face` `FAISS` `FastAPI` `React` `Three.js` `Flutter` `ESP32` `Docker`
+<img src="assets/tools.svg" width="100%" alt="ML: Python, PyTorch, TensorFlow, scikit-learn, Hugging Face, FAISS. Build: FastAPI, React, Three.js, Flutter, Docker, Git, ESP32." />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sudarsan2507-hue/sudarsan2507-hue/output/snake-dark.svg">
