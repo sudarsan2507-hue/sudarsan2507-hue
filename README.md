@@ -21,65 +21,77 @@ See it in 3D: [two-minute version](https://sudarsan2507-hue.github.io/Portfolio/
 
 <br clear="right" />
 
-<a href="mailto:sudarsan2507@gmail.com"><img src="assets/open-to.svg" width="100%" alt="Open to internships. Strongest fit: AI safety and LLM evaluation research, AI agent security, and applied LLM and RAG engineering. Also: ML engineering and data, medical imaging ML, and edge and sensing ML." /></a>
+## Open to internships
+
+Ranked by how much finished work backs each one. Click a row to see its repos.
 
 <details>
-<summary><b>01 · AI safety and LLM evaluation research</b> &nbsp;<code>strongest fit</code> &nbsp;— why</summary>
+<summary><img src="assets/open-01.svg" width="94%" alt="1. AI safety and LLM evaluation research. Click to see the repos." /></summary>
 <br/>
 
-I design the experiment before I run it and I report the results that did not improve. In Glass Armor, ordinary tests missed all 71 flaws I planted across 400 LLM migrations, and my security gate's feedback repaired 10 of 31 insecure outputs where test feedback repaired none (McNemar p = 0.002). DemoSearch wrote its hypotheses down before each run across five tasks.
+I design the experiment before I run it, and I report the results that did not improve.
 
-**Repos:** [Glass Armor](https://github.com/sudarsan2507-hue/GLASS-ARMOR) · [DemoSearch](https://github.com/sudarsan2507-hue/DemoSearch)
+- **[Glass Armor](https://github.com/sudarsan2507-hue/GLASS-ARMOR)**: My security gate's feedback repaired 10 of 31 insecure LLM migrations; test feedback repaired none (McNemar p = 0.002).
+- **[DemoSearch](https://github.com/sudarsan2507-hue/DemoSearch)**: Hypotheses written before each run, across five tasks: a failure with a reason gives up to 3.3× the repairs of a blind retry.
 
 </details>
 
 <details>
-<summary><b>02 · AI agent security and guardrails</b> &nbsp;<code>strongest fit</code> &nbsp;— why</summary>
+<summary><img src="assets/open-02.svg" width="94%" alt="2. AI agent security and guardrails. Click to see the repos." /></summary>
 <br/>
 
-I have built three working systems on one problem: limiting the damage after a prompt injection lands. ChokeTap checks every tool call for policy, taint and intent and blocks an out-of-scope call in 0.06 ms. SentinelMind watches an agent live for four kinds of failure. Engram screens synced memories and stopped 6 of 6 poisoning attacks in its demo.
+Three working systems on one problem: limiting the damage after a prompt injection lands.
 
-**Repos:** [ChokeTap](https://github.com/sudarsan2507-hue/ChokeTap) · [SentinelMind](https://github.com/sudarsan2507-hue/Sentinel_Mind) · [Engram](https://github.com/sudarsan2507-hue/Engram) · [Aegis AI](https://github.com/sudarsan2507-hue/Aegis)
+- **[ChokeTap](https://github.com/sudarsan2507-hue/ChokeTap)**: Checks every tool call for policy, taint and intent; blocks an out-of-scope call in 0.06 ms.
+- **[SentinelMind](https://github.com/sudarsan2507-hue/Sentinel_Mind)**: A second AI that watches an agent live and flags four kinds of failure.
+- **[Engram](https://github.com/sudarsan2507-hue/Engram)**: Screens synced memories for poisoning; stopped 6 of 6 attacks in its demo.
+- **[Aegis AI](https://github.com/sudarsan2507-hue/Aegis)**: ET AI Hackathon finalist; I owned the Fraud Shield module.
 
 </details>
 
 <details>
-<summary><b>03 · Applied LLM and RAG engineering</b> &nbsp;<code>strongest fit</code> &nbsp;— why</summary>
+<summary><img src="assets/open-03.svg" width="94%" alt="3. Applied LLM and RAG engineering. Click to see the repos." /></summary>
 <br/>
 
-GradeRAG came out of a supervised NLP research internship at NIT Trichy, rated Excellent, with a paper under review. It raised exact match by 29.5 points for GPT-4o-mini on HotpotQA and improved 5 of 6 model and dataset pairs.
+From a supervised NLP research internship at NIT Trichy, rated Excellent, with a paper under review.
 
-**Repos:** [GradeRAG](https://github.com/sudarsan2507-hue/GradeRAG) · [rag-browser-ai](https://github.com/sudarsan2507-hue/rag-browser-ai) · [YT Knowledge Assistant](https://github.com/sudarsan2507-hue/yt-knowledge-assistant)
+- **[GradeRAG](https://github.com/sudarsan2507-hue/GradeRAG)**: +29.5 points exact match for GPT-4o-mini on HotpotQA; 5 of 6 model and dataset pairs improved.
+- **[rag-browser-ai](https://github.com/sudarsan2507-hue/rag-browser-ai)**: A RAG pipeline that searches the web itself before answering.
+- **[YT Knowledge Assistant](https://github.com/sudarsan2507-hue/yt-knowledge-assistant)**: Answers questions about a YouTube video from its transcript.
 
 </details>
 
 <details>
-<summary><b>04 · ML engineering and data</b> &nbsp;— why</summary>
+<summary><img src="assets/open-04.svg" width="94%" alt="4. ML engineering and data. Click to see the repos." /></summary>
 <br/>
 
-I publish data other people can train on: two Kaggle datasets with DOIs, both split so nothing leaks between train and test (by lesion for ISIC 2019, by subject for IXI). BaseSVM is a support vector machine written from scratch.
+I publish data other people can train on, split so nothing leaks between train and test.
 
-**Repos:** [iAudit](https://github.com/sudarsan2507-hue/iAudit) · [BaseSVM](https://github.com/sudarsan2507-hue/BaseSVM)
+- **[iAudit](https://github.com/sudarsan2507-hue/iAudit)**: Two CNNs and three tabular models compared on brain age, checked on two outside datasets.
+- **[BaseSVM](https://github.com/sudarsan2507-hue/BaseSVM)**: A linear support vector machine written from scratch, with no libraries.
 
 </details>
 
 <details>
-<summary><b>05 · Medical imaging ML</b> &nbsp;— why</summary>
+<summary><img src="assets/open-05.svg" width="94%" alt="5. Medical imaging ML. Click to see the repos." /></summary>
 <br/>
 
-iAudit compared two CNNs and three tabular models for brain age on IXI, then checked them on eNKI and SALD, and found the bias follows the scanner site, not the model. The preprocessed scans are public. This is one line of work so far, not a specialisation.
+One line of work so far, not yet a specialisation.
 
-**Repos:** [iAudit](https://github.com/sudarsan2507-hue/iAudit)
+- **[iAudit](https://github.com/sudarsan2507-hue/iAudit)**: Found that brain-age bias follows the scanner site, not the model. The 492 preprocessed scans are public on Kaggle.
 
 </details>
 
 <details>
-<summary><b>06 · Edge and sensing ML</b> &nbsp;— why</summary>
+<summary><img src="assets/open-06.svg" width="94%" alt="6. Edge and sensing ML. Click to see the repos." /></summary>
 <br/>
 
-HydroFuse combines ESP32 soil and vibration sensors with five satellite sources to find pipe leaks. WISP detects falls from Wi-Fi signals with two ESP32 boards; its figure of under one false alarm a week is a target, not yet a measured result.
+Hardware and ML together, on ESP32 boards.
 
-**Repos:** [HydroFuse](https://github.com/sudarsan2507-hue/HydroFuse) · [WISP](https://github.com/sudarsan2507-hue/WISP) · [Syrinx](https://github.com/sudarsan2507-hue/Syrinx) · [Safe-Signal](https://github.com/sudarsan2507-hue/Safe-Signal)
+- **[HydroFuse](https://github.com/sudarsan2507-hue/HydroFuse)**: Finds pipe leaks by combining soil and vibration sensors with five satellite sources.
+- **[WISP](https://github.com/sudarsan2507-hue/WISP)**: Fall detection from Wi-Fi signals. Under one false alarm a week is the target, not yet a measured result.
+- **[Syrinx](https://github.com/sudarsan2507-hue/Syrinx)**: Controls music on a phone with vocal sounds.
+- **[Safe-Signal](https://github.com/sudarsan2507-hue/Safe-Signal)**: On-device distress detection from a hand signal, voice and movement.
 
 </details>
 
